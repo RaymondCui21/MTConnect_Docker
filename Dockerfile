@@ -4,7 +4,6 @@ FROM ubuntu:18.04
 
 MAINTAINER raymond.cui2015@gmail.com
 
-# Download, validate, and expand Apache NiFi binary.
 RUN apt-get update \
     && apt-get install -y libxml2 libxml2-dev cmake git libcppunit-dev build-essential screen ruby curl \
     && mkdir -p ~/agent/build \ 
